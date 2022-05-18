@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 2</title>
+<style>
+  .label, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .label1 {
+    display: block;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Survey Says...</h1>
+    </header>
+    <main>
+        <section>
+          <h4>Here is the survey</h4>
+            <form action="https://formspree.io/f/mlezazzd" method="POST">
+    <label for="name" class="label">Name:
+    <input type="text" name="name" id="name">
+    </label>
+    <label for="email" class="label">
+    Your email:
+    <input type="email" name="email"  id ="email" required>
+  </label>
+  <label for="color" class="label">What is your favorite color?
+    <input type="color" name="color" id="color">
+  </label>
+  <label for="number" class="label">What is your favorite number?
+    <input  type="number" name="number" id="number">
+  </label>
+  <label for ="website" class="label">What is your favorite website?
+    <input type="url" name="website" id="website">
+  </label>
+  <p>What is your favorite food?</p>
+  <p>
+    <input type="checkbox" name="pizza" id="pizza" value="pizza"><label for="pizza">pizza</label>
+    <input type="checkbox" name="salad" id="salad" value="salad"><label for="salad">salad</label>
+    <input type="checkbox" name="ice_cream" id="ice_cream" value="ice_cream"><label for="ice_cream">ice cream</label>
+    <input type="checkbox" name="cookie" id="cookie" value="cookie"><label for="cookie">cookie</label>
+  </p>
+  <p>What is favorite football team?</p>
+  <p>
+    <input type="radio" name="49ers" id="49ers" value="49ers"><label for="49ers">San Francisco 49ers</label>
+    <input type="radio" name="cardinals" id="cardinals" value="cardinals"><label for="cardinals">Cardinals</label>
+    <input type="radio" name="rams" id="rams" value="rams"><label for="rams">Rams</label>
+    <input type="radio" name="seahawks" id="seahawks" value="seahawks"><label for="seahawks">Seahawks</label>
+  </p>
+  <p><label for="continent">What is your favorite continent?</label></p>
+  <select name="continent" id="continent"  size="3">
+    <option value="africa">Africa</option>
+    <option value="antarctica">Antarctica</option>
+    <option value="asia">Asia</option>
+    <option value="europe">Europe</option>
+    <option value="north_america">North America</option>
+    <option value="south_america">South America</option>
+  </select>
+  <label for="note" class="label1">
+    Your message:
+    <textarea id="note" name="note" rows="10" cols="50" placeholder="Message"></textarea>
+  </label>
+  <label for="quality" class="label">How do you rate this survey?</label>
+<p><span>0</span><input type="range" value="5" id="quality" name="quality" min="0" max="10"><span>10</span></p>
+  
+  <!-- your other form fields go here -->
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+        </section>
+    </main>
+</body>
+</html>
+
